@@ -1,23 +1,82 @@
 aid: starrocks
 url: https://raw.githubusercontent.com/api-evangelist/starrocks/refs/heads/main/apis.yml
 name: StarRocks
-x-type: company
+x-type: opensource
 description: >-
-  StarRocks is a high-performance MPP analytical database engine for real-time analytics on data lakes and warehouses. Open source under Apache 2.0; commercial offering by CelerData.
+  StarRocks is a high-performance, open-source (Apache 2.0) OLAP / lakehouse engine.
+  Clients run SQL via the MySQL protocol, while the FE HTTP server exposes REST endpoints
+  for management and Stream Load is an HTTP-based ingestion API. CelerData provides the
+  managed cloud offering.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Data
-  - Analytics
   - OLAP
-  - Real-Time
+  - Lakehouse
   - SQL
+  - Open Source
+  - Real-Time Analytics
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+  - aid: starrocks:starrocks-stream-load
+    name: StarRocks Stream Load HTTP API
+    humanURL: https://docs.starrocks.io/docs/loading/StreamLoad/
+    baseURL: http://{fe_host}:{fe_http_port}/api/{database}/{table}/_stream_load
+    tags:
+      - Ingestion
+      - Loading
+      - HTTP
+    description: >-
+      Stream Load is a synchronous HTTP-based ingestion API. Clients PUT a CSV or JSON
+      payload to /api/{db}/{table}/_stream_load with HTTP Basic authentication and
+      headers like `label`, `column_separator`, `columns`, and `format`. The server
+      returns the load result inline.
+    properties:
+      - type: Documentation
+        url: https://docs.starrocks.io/docs/loading/StreamLoad/
+      - type: Authentication
+        url: https://docs.starrocks.io/docs/loading/StreamLoad/
+  - aid: starrocks:starrocks-fe-http
+    name: StarRocks FE HTTP API
+    humanURL: https://docs.starrocks.io/docs/administration/management/FE_configuration/
+    baseURL: http://{fe_host}:{fe_http_port}
+    tags:
+      - Management
+      - HTTP
+      - Operations
+    description: >-
+      The Frontend (FE) HTTP server exposes REST endpoints for cluster administration,
+      metrics, query profiling, and load monitoring. Most administrative operations are
+      additionally available via the SQL `ADMIN` family of statements.
+    properties:
+      - type: Documentation
+        url: https://docs.starrocks.io/docs/administration/management/FE_configuration/
+  - aid: starrocks:starrocks-mysql-protocol
+    name: StarRocks Query Interface (MySQL Wire)
+    humanURL: https://docs.starrocks.io/
+    baseURL: mysql://{user}@{fe_host}:9030
+    tags:
+      - SQL
+      - MySQL
+      - Wire Protocol
+    description: >-
+      StarRocks is wire-compatible with MySQL on port 9030, so any MySQL/MariaDB client
+      or JDBC driver can connect to issue SQL queries.
+    properties:
+      - type: Documentation
+        url: https://docs.starrocks.io/
 common:
   - type: Website
     url: https://www.starrocks.io/
+  - type: Portal
+    url: https://docs.starrocks.io/
+  - type: SourceCode
+    url: https://github.com/StarRocks/starrocks
+  - type: License
+    url: https://github.com/StarRocks/starrocks/blob/main/LICENSE.txt
+  - type: CommercialOffering
+    title: CelerData Cloud
+    url: https://www.celerdata.com/
   - type: Plans
     url: plans/starrocks-plans-pricing.yml
   - type: RateLimits

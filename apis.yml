@@ -1,0 +1,29 @@
+aid: starrocks
+url: https://raw.githubusercontent.com/api-evangelist/starrocks/refs/heads/main/apis.yml
+name: StarRocks
+x-type: company
+description: >-
+  StarRocks is a high-performance MPP analytical database engine for real-time analytics on data lakes and warehouses. Open source under Apache 2.0; commercial offering by CelerData.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Data
+  - Analytics
+  - OLAP
+  - Real-Time
+  - SQL
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://www.starrocks.io/
+  - type: Plans
+    url: plans/starrocks-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/starrocks-rate-limits.yml
+  - type: FinOps
+    url: finops/starrocks-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

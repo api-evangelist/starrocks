@@ -1,7 +1,7 @@
 aid: starrocks
 url: https://raw.githubusercontent.com/api-evangelist/starrocks/refs/heads/main/apis.yml
 name: StarRocks
-x-type: opensource
+kind: opensource
 description: >-
   StarRocks is a high-performance, open-source (Apache 2.0) OLAP / lakehouse engine.
   Clients run SQL via the MySQL protocol, while the FE HTTP server exposes REST endpoints

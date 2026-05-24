@@ -85,6 +85,8 @@ common:
     url: rate-limits/starrocks-rate-limits.yml
   - type: FinOps
     url: finops/starrocks-finops.yml
+  - type: LLMsTxt
+    url: https://docs.starrocks.io/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

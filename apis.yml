@@ -7,7 +7,7 @@ description: >-
   Clients run SQL via the MySQL protocol, while the FE HTTP server exposes REST endpoints
   for management and Stream Load is an HTTP-based ingestion API. CelerData provides the
   managed cloud offering.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - OLAP
   - Lakehouse

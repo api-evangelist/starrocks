@@ -66,6 +66,8 @@ apis:
       - type: Documentation
         url: https://docs.starrocks.io/
 common:
+  - type: DomainSecurity
+    url: security/starrocks-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/starrocks-oss
   - type: Website
@@ -87,6 +89,8 @@ common:
     url: finops/starrocks-finops.yml
   - type: LlmsText
     url: https://docs.starrocks.io/llms.txt
+  - url: https://www.starrocks.io/blog/rss.xml
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

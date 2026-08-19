@@ -1,0 +1,129 @@
+# StarRocks Documentation
+
+> StarRocks is an open-source, high-performance OLAP database for real-time analytics at scale. It supports Standard SQL, materialized views, data lakes (Iceberg, Delta Lake, Hudi), stream ingestion (Kafka, Flink), and cloud-native deployment. This documentation covers SQL reference, table design, data loading, query acceleration, administration, and release notes.
+
+## Administration
+
+- [Administration](https://docs.starrocks.io/docs/administration/llms.txt): section index of 70 documentation pages.
+
+## Benchmarking
+
+- [SSB Flat-table Benchmarking](https://docs.starrocks.io/docs/benchmarking/SSB_Benchmarking.md): SSB flat-table benchmark on 100 GB dataset: StarRocks is 1.87x faster than ClickHouse and 4.75x faster than Apache Druid across 13 queries.
+- [TPC-DS test SQL](https://docs.starrocks.io/docs/benchmarking/tpc_ds_99_sql.md): Complete SQL text for all 99 TPC-DS benchmark queries used in StarRocks performance testing.
+- [TPC-DS Benchmarking](https://docs.starrocks.io/docs/benchmarking/TPC_DS_Benchmark.md): TPC-DS benchmark on 1 TB dataset: StarRocks is 8.13x faster than Trino on OLAP tables and 6.93x faster on Iceberg Catalog queries (99 queries).
+- [TPC-H Benchmark](https://docs.starrocks.io/docs/benchmarking/TPC-H_Benchmarking.md): TPC-H benchmark on 100 GB dataset: StarRocks native storage is 8.9x faster than Trino; StarRocks Hive external tables are 2x faster than Trino (22 queries).
+
+## Best_practices
+
+- [Best_practices](https://docs.starrocks.io/docs/llms.txt): section index of 18 documentation pages.
+
+## Data_source
+
+- [Data_source](https://docs.starrocks.io/docs/llms.txt): section index of 31 documentation pages.
+
+## Deployment
+
+- [Deployment](https://docs.starrocks.io/docs/llms.txt): section index of 15 documentation pages.
+
+## Developers
+
+- [Developers](https://docs.starrocks.io/docs/developers/llms.txt): section index of 15 documentation pages.
+
+## Faq
+
+- [Faq](https://docs.starrocks.io/docs/faq/llms.txt): section index of 20 documentation pages.
+
+## Flink_connector
+
+- [Releases of StarRocks Connector for Flink](https://docs.starrocks.io/releasenotes/flink_connector.md): Release notes and changelog for the StarRocks Connector for Apache Flink.
+
+## Integrations
+
+- [Integrations](https://docs.starrocks.io/docs/integrations/llms.txt): section index of 42 documentation pages.
+
+## Introduction
+
+- [Introduction](https://docs.starrocks.io/docs/introduction/llms.txt): section index of 8 documentation pages.
+
+## Kafka_connector
+
+- [Releases of StarRocks Connector for Kafka](https://docs.starrocks.io/releasenotes/kafka_connector.md): Release notes and changelog for the StarRocks Connector for Apache Kafka.
+
+## Loading
+
+- [Loading](https://docs.starrocks.io/docs/loading/llms.txt): section index of 34 documentation pages.
+
+## Quick_start
+
+- [Quick Start](https://docs.starrocks.io/docs/quick_start.md): Deploy StarRocks with Docker Compose, Helm, and StarRocks Operator
+- [StarRocks with Helm](https://docs.starrocks.io/docs/quick_start/helm.md): Quick start guide for deploying StarRocks on Kubernetes using Helm.
+- [Apache Hudi Lakehouse](https://docs.starrocks.io/docs/quick_start/hudi.md): Quick start guide for querying Apache Hudi data lakes with StarRocks.
+- [Apache Iceberg Lakehouse](https://docs.starrocks.io/docs/quick_start/iceberg.md): Quick start guide for querying Apache Iceberg data lakes with StarRocks.
+- [Claude + StarRocks MCP](https://docs.starrocks.io/docs/quick_start/MCP.md): Analyze complex data with Claude and the StarRocks MCP server on a shared-data cluster.
+- [Kafka routine load StarRocks using shared-data storage](https://docs.starrocks.io/docs/quick_start/routine-load.md): Quick start guide for streaming data from Kafka into StarRocks using Routine Load with shared-data storage.
+- [Separate storage and compute](https://docs.starrocks.io/docs/quick_start/shared-data.md): Quick start guide for deploying StarRocks in shared-data mode with separate compute and storage.
+- [Deploy StarRocks with Docker](https://docs.starrocks.io/docs/quick_start/shared-nothing.md): StarRocks in Docker: Query real data with JOINs
+
+## Release 2.5
+
+- [StarRocks version 2.5](https://docs.starrocks.io/releasenotes/release-2.5.md): StarRocks 2.5 release notes: Delta Lake catalog, Data Cache for external storage, Query Cache, query queues, resource groups for data loading, STRUCT/MAP...
+
+## Release 3.0
+
+- [StarRocks version 3.0](https://docs.starrocks.io/releasenotes/release-3.0.md): StarRocks 3.0 release notes: new aggregate functions (percentile_disc), GROUP BY compatibility improvements, and storage engine and query engine updates.
+
+## Release 3.1
+
+- [StarRocks version 3.1](https://docs.starrocks.io/releasenotes/release-3.1.md): StarRocks 3.1 release notes: bug fixes and improvements to shared-data architecture, asynchronous materialized views, and cross-cluster data migration tool.
+
+## Release 3.2
+
+- [StarRocks version 3.2](https://docs.starrocks.io/releasenotes/release-3.2.md): StarRocks 3.2 release notes: Unified Catalog for Hive/Iceberg/Hudi/Delta Lake, Hive managed table creation, Primary Key index persistence on disk in...
+
+## Release 3.3
+
+- [StarRocks version 3.3](https://docs.starrocks.io/releasenotes/release-3.3.md): StarRocks 3.3 release notes: sub-second DDL via Fast Schema Evolution in shared-data, StarRocks Data Migration Tool, CACHE SELECT for data lake warmup,...
+
+## Release 3.4
+
+- [StarRocks version 3.4](https://docs.starrocks.io/releasenotes/release-3.4.md): StarRocks 3.4 release notes: Iceberg Time Travel, Python UDFs, vector indexes (IVFPQ/HNSW) for approximate nearest neighbor search, unified expression...
+
+## Release 3.5
+
+- [StarRocks version 3.5](https://docs.starrocks.io/releasenotes/release-3.5.md): StarRocks 3.5 release notes: Iceberg view creation, OAuth 2.0 and JWT authentication with Security Integration, multi-partition-column materialized views,...
+
+## Release 4.0
+
+- [StarRocks version 4.0](https://docs.starrocks.io/releasenotes/release-4.0.md): StarRocks 4.0 release notes: DECIMAL256 type, File Bundling for shared-data clusters, Multi-Table Write-Write Transactions, Iceberg compaction and hidden...
+
+## Release 4.1
+
+- [StarRocks version 4.1](https://docs.starrocks.io/releasenotes/release-4.1.md): StarRocks 4.1 release notes: multi-tenant range-based tablet auto-splitting, large-capacity tablet support (100 GB target), Fast Schema Evolution V2 for...
+
+## Search
+
+- [Search the documentation](https://docs.starrocks.io/search.md)
+
+## Spark_connector
+
+- [Releases of StarRocks Connector for Spark](https://docs.starrocks.io/releasenotes/spark_connector.md): Release notes and changelog for the StarRocks Connector for Apache Spark.
+
+## Sql Reference
+
+- [Sql Reference](https://docs.starrocks.io/docs/llms.txt): section index of 778 documentation pages.
+
+## Starrocks Kubernetes Operator
+
+- [Releases of Kubernetes Operator for StarRocks](https://docs.starrocks.io/releasenotes/starrocks-kubernetes-operator.md): The Operator provided by StarRocks is used to deploy StarRocks clusters in the Kubernetes environment.
+
+## Table_design
+
+- [Table_design](https://docs.starrocks.io/docs/llms.txt): section index of 23 documentation pages.
+
+## Unloading
+
+- [Unloading](https://docs.starrocks.io/docs/unloading/llms.txt): section index of 7 documentation pages.
+
+## Using_starrocks
+
+- [Using_starrocks](https://docs.starrocks.io/docs/llms.txt): section index of 31 documentation pages.

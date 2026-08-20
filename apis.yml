@@ -24,6 +24,12 @@ tags:
   - OLAP
   - Lakehouse
   - SQL
+  - Open-Source
+  - Real-Time Analytics
+tags_raw:
+  - OLAP
+  - Lakehouse
+  - SQL
   - Open Source
   - Real-Time Analytics
 created: '2026-05-08'
@@ -53,6 +59,9 @@ apis:
     humanURL: https://docs.starrocks.io/docs/administration/management/FE_configuration/
     baseURL: http://{fe_host}:{fe_http_port}
     tags:
+      - Management
+      - HTTP
+    tags_raw:
       - Management
       - HTTP
       - Operations

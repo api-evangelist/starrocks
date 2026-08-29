@@ -7,6 +7,18 @@ description: >-
   Clients run SQL via the MySQL protocol, while the FE HTTP server exposes REST endpoints
   for management and Stream Load is an HTTP-based ingestion API. CelerData provides the
   managed cloud offering.
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: true
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - pricing
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
@@ -87,6 +99,16 @@ apis:
       - type: Documentation
         url: https://docs.starrocks.io/
 common:
+  - type: IssueTracker
+    url: https://github.com/StarRocks/starrocks/issues
+  - type: Releases
+    url: https://github.com/StarRocks/starrocks/releases
+  - type: SecurityPolicy
+    url: https://github.com/StarRocks/starrocks/blob/main/SECURITY.md
+  - type: CodeOfConduct
+    url: https://github.com/StarRocks/starrocks/blob/main/CODE_OF_CONDUCT.md
+  - type: ContributionGuide
+    url: https://github.com/StarRocks/starrocks/blob/main/CONTRIBUTING.md
   - type: DomainSecurity
     url: security/starrocks-domain-security.yml
   - type: LinkedIn

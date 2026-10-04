@@ -8,16 +8,21 @@ description: >-
   for management and Stream Load is an HTTP-based ingestion API. CelerData provides the
   managed cloud offering.
 deliveryModel:
-  model: unknown
-  open_source: unknown
+  model: open-core
+  license: Apache-2.0
+  license_evidence:
+    repo: starrocks/starrocks
+    spdx: Apache-2.0
+    stars: 12142
+  open_source: true
   commercial: true
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
+  label: Open core · an OSS project plus a commercial hosted product
+  confidence: medium
   source:
   - pricing
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-license
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: freemium
@@ -36,7 +41,7 @@ tags:
   - OLAP
   - Lakehouse
   - SQL
-  - Open-Source
+  - Open Source
   - Real-Time Analytics
 tags_raw:
   - OLAP
@@ -44,6 +49,7 @@ tags_raw:
   - SQL
   - Open Source
   - Real-Time Analytics
+  - Open-Source
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.23'

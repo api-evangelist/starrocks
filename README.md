@@ -1,4 +1,4 @@
-# StarRocks (starrocks)
+# StarRocks
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,40 +66,102 @@
 
 StarRocks is a high-performance, open-source (Apache 2.0) OLAP / lakehouse engine. Clients run SQL via the MySQL protocol, while the FE HTTP server exposes REST endpoints for management and Stream Load is an HTTP-based ingestion API. CelerData provides the managed cloud offering.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/starrocks/refs/heads/main/apis.yml)
+**Areas:** OLAP · Lakehouse · SQL · Open Source · Real-Time Analytics
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=starrocks-api-evangelist&utm_content=repo)
+## StarRocks on APIs.io
 
-## Type
-- **x-type:** opensource
+Everything profiled for StarRocks is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/starrocks/](https://apis.io/providers/starrocks/)** — or go straight to one of the APIs or properties below.
 
-## APIs
-- **StarRocks Stream Load HTTP API** - Synchronous PUT to `/api/{db}/{table}/_stream_load` for ingestion. HTTP Basic auth.
-- **StarRocks FE HTTP API** - Frontend HTTP endpoints for cluster admin, metrics, query profile, load monitoring.
-- **StarRocks Query Interface (MySQL Wire)** - Connect via any MySQL/MariaDB client on port 9030.
+### APIs (3)
 
-## Tags
-- OLAP, Lakehouse, SQL, Open Source, Real-Time Analytics
+- [StarRocks Stream Load HTTP API](https://apis.io/apis/starrocks/starrocks-stream-load/) — Stream Load is a synchronous HTTP-based ingestion API. Clients PUT a CSV or JSON payload to /api/{db}/{table}/_stream_load with HTTP Basic authentication…
+- [StarRocks FE HTTP API](https://apis.io/apis/starrocks/starrocks-fe-http/) — The Frontend (FE) HTTP server exposes REST endpoints for cluster administration, metrics, query profiling, and load monitoring. Most administrative…
+- [StarRocks Query Interface (MySQL Wire)](https://apis.io/apis/starrocks/starrocks-mysql-protocol/) — StarRocks is wire-compatible with MySQL on port 9030, so any MySQL/MariaDB client or JDBC driver can connect to issue SQL queries.
 
-## Timestamps
-- **Created:** 2026-05-08
-- **Modified:** 2026-05-08
+### Published properties
 
-## Common Properties
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Starrocks Domain Security](https://apis.io/security/starrocks/starrocks-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Starrocks Plans Pricing](https://apis.io/plans/starrocks/starrocks-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Starrocks Rate Limits](https://apis.io/rate-limits/starrocks/starrocks-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Starrocks Finops](https://apis.io/finops/starrocks/starrocks-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.starrocks.io/)
-- [Documentation](https://docs.starrocks.io/)
-- [Source Code (Apache 2.0)](https://github.com/StarRocks/starrocks)
-- [Commercial Cloud: CelerData](https://www.celerdata.com/)
-- [Plans](plans/starrocks-plans-pricing.yml)
-- [RateLimits](rate-limits/starrocks-rate-limits.yml)
-- [FinOps](finops/starrocks-finops.yml)
+- [Blog](https://www.starrocks.io/blog/rss.xml)
 
-## Notes
-- Apache 2.0 open source. CelerData Cloud (managed StarRocks) does not publicly list pricing.
-- Stream Load is the canonical HTTP-based ingestion path. The FE HTTP server exposes operational endpoints; SQL `ADMIN` covers the same ground.
-- No official OpenAPI spec for the FE HTTP surface.
+## API Evangelist rating
 
-## Maintainers
-**FN:** Kin Lane
+**Kin Score 28.6** — thin · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 78.6 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 39.5 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 7.9 |
+
+**Agent readiness 3.1** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/starrocks/](https://apis.io/providers/starrocks/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for StarRocks: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/starrocks/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
